@@ -20,7 +20,7 @@ NotificationBanner is an extremely customizable and lightweight library that mak
   s.author           = { 'zinwalin' => 'zinwa.lin@gmail.com' }
   s.source           = { :git => 'https://github.com/zinwalin/NotificationBanner.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
   s.swift_version = '5.0'
   s.source_files = 'MageNotificationBanner/Classes/**/*'
 
