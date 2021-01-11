@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MageNotificationBanner'
-  s.version          = '3.0.7'
+  s.version          = '3.0.8'
   s.summary          = 'The easiest way to display in app notification banners in iOS.'
 
   s.description      = <<-DESC
