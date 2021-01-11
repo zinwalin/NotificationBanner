@@ -308,6 +308,9 @@ open class BaseNotificationBanner: UIView {
             initialSpringVelocity: 1,
             options: [.curveLinear, .allowUserInteraction],
             animations: {
+                guard let _ = self.bannerPositionFrame else {
+                    return
+                }
                 self.frame = self.bannerPositionFrame.endFrame
         })
     }
@@ -421,6 +424,9 @@ open class BaseNotificationBanner: UIView {
                 options: [.curveLinear, .allowUserInteraction],
                 animations: {
                     BannerHapticGenerator.generate(self.haptic)
+                    guard let _ = self.bannerPositionFrame else {
+                        return
+                    }
                     self.frame = self.bannerPositionFrame.endFrame
             }) { (completed) in
 
@@ -570,6 +576,9 @@ open class BaseNotificationBanner: UIView {
         UIView.animate(
             withDuration: forced ? animationDuration / 2 : animationDuration,
             animations: {
+                guard let _ = self.bannerPositionFrame else {
+                    return
+                }
                 self.frame = self.bannerPositionFrame.startFrame
         }) { (completed) in
 
